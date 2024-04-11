@@ -1,4 +1,4 @@
-const api_key = "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";
+const api_key = "your API key";
 const voiceButton = document.getElementById("voice-button");
 const sendButton = document.getElementById("send-button");
 const textInput = document.getElementById("text-input");
