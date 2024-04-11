@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      id="visual"
+      viewBox="0 0 900 600"
+      width="100%"
+      height="138vh"
+      version="1.1"
+    >
+      <rect x="0" y="0" width="900" height="600" fill="#002233" />
+      <path
+        d="M0 441L7.8 436.2C15.7 431.3 31.3 421.7 47.2 429C63 436.3 79 460.7 94.8 471.3C110.7 482 126.3 479 142 451.8C157.7 424.7 173.3 373.3 189.2 347.2C205 321 221 320 236.8 318C252.7 316 268.3 313 284.2 326.7C300 340.3 316 370.7 331.8 390.3C347.7 410 363.3 419 379 427.3C394.7 435.7 410.3 443.3 426.2 431.7C442 420 458 389 473.8 386.7C489.7 384.3 505.3 410.7 521 421.7C536.7 432.7 552.3 428.3 568.2 409.8C584 391.3 600 358.7 615.8 357.7C631.7 356.7 647.3 387.3 663.2 412.2C679 437 695 456 710.8 441.3C726.7 426.7 742.3 378.3 758 367C773.7 355.7 789.3 381.3 805.2 404.2C821 427 837 447 852.8 456.5C868.7 466 884.3 465 892.2 464.5L900 464L900 601L892.2 601C884.3 601 868.7 601 852.8 601C837 601 821 601 805.2 601C789.3 601 773.7 601 758 601C742.3 601 726.7 601 710.8 601C695 601 679 601 663.2 601C647.3 601 631.7 601 615.8 601C600 601 584 601 568.2 601C552.3 601 536.7 601 521 601C505.3 601 489.7 601 473.8 601C458 601 442 601 426.2 601C410.3 601 394.7 601 379 601C363.3 601 347.7 601 331.8 601C316 601 300 601 284.2 601C268.3 601 252.7 601 236.8 601C221 601 205 601 189.2 601C173.3 601 157.7 601 142 601C126.3 601 110.7 601 94.8 601C79 601 63 601 47.2 601C31.3 601 15.7 601 7.8 601L0 601Z"
+        fill="#0066FF"
+        stroke-linecap="round"
+        stroke-linejoin="miter"
+      />
+    </svg>
+    <header>
+      <h1>IMAGINE</h1>
+    </header>
+    <section class="Image-section"></section>
+    <section class="bottom-section">
+      <div class="input-container">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="text-input"
+            placeholder="Hello, how can I assist you today?"
+            aria-label="Type here..."
+            aria-describedby="basic-addon2"
+          />
+          <button
+            class="btn btn-secondary voice-button"
+            type="button"
+            id="voice-button"
+          >
+            <i class="fas fa-microphone"></i>
+          </button>
+          <button class="btn btn-primary" type="button" id="send-button">
+            Send
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
